@@ -378,31 +378,136 @@ input[type="submit"]{
 
 @media (max-width:430px){
 
+    body{
+        overflow-x:hidden;
+    }
+
     h1{
-        font-size:35px;
+        font-size:34px;
+        line-height:1.1;
+    }
+
+    nav{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:10px;
     }
 
     nav a{
-        display:block;
-        margin:10px;
+        font-size:14px;
+        margin:0;
+    }
+
+    .text-block{
+        padding:15px;
+    }
+
+    .text-block p{
+        font-size:15px;
+        line-height:1.3;
+    }
+
+    /* ГЛАВНАЯ */
+
+    .main-block{
+        flex-direction:column;
+        margin:0;
+        padding:15px;
+        gap:15px;
+    }
+
+    .main-block img{
+        width:100%;
+        height:auto;
+    }
+
+    .text{
         font-size:16px;
     }
 
-    .main-block,
-    .order-section{
+    /* ГАЛЕРЕЯ */
+
+    .gallery-page{
         position:static;
         height:auto;
         display:flex;
         flex-direction:column;
-        gap:20px;
-        padding:20px;
+        align-items:center;
+        gap:25px;
+        padding:15px;
     }
 
-    .main-block img,
-    .order-cake7{
+    .gallery-page .card{
         position:static;
+        transform:none;
+        width:100%;
+        max-width:280px;
+    }
+
+    .gallery-page img{
         width:100%;
         height:auto;
+    }
+
+    .gallery-page h3{
+        font-size:18px;
+    }
+
+    /* КОНТАКТЫ */
+
+    .contacts-page{
+        position:static;
+        height:auto;
+        padding:15px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .work-time{
+        position:static;
+        width:100%;
+        margin-bottom:20px;
+    }
+
+    .work-time h3{
+        font-size:22px;
+    }
+
+    .work-time p{
+        font-size:16px;
+    }
+
+    .contact-cake4-img,
+    .contact-cake5-img,
+    .contact-cake6-img{
+        position:static;
+        width:100%;
+        max-width:260px;
+        height:auto;
+        margin-bottom:20px;
+    }
+
+    .contacts-bottom-info{
+        position:static;
+        width:100%;
+        text-align:left;
+    }
+
+    .contacts-bottom-info p{
+        font-size:16px;
+    }
+
+    /* ЗАКАЗ */
+
+    .order-section{
+        position:static;
+        height:auto;
+        padding:15px;
+        display:flex;
+        flex-direction:column;
+        gap:25px;
     }
 
     .order-form{
@@ -410,34 +515,56 @@ input[type="submit"]{
         width:100%;
     }
 
-    .gallery-page,
-    .menu-images,
-    .contacts-page{
+    .order-form label{
+        font-size:18px;
+    }
+
+    .order-form input,
+    .order-form select,
+    .order-form textarea{
+        width:100%;
+        font-size:16px;
+    }
+
+    .order-cake7{
+        position:static;
+        width:100%;
+        height:auto;
+    }
+
+    .bottom-text{
+        position:static;
+        margin-top:20px;
+        text-align:center;
+        font-size:16px;
+        line-height:1.3;
+    }
+
+    /* МЕНЮ */
+
+    .menu-images{
         position:static;
         height:auto;
         display:flex;
         flex-direction:column;
         align-items:center;
-        gap:20px;
-        padding:20px;
+        gap:25px;
+        padding:15px;
     }
 
-    .gallery-page .card,
-    .menu-images .card,
-    .contacts-text,
-    .work-time,
-    .contact-cake4-img,
-    .contact-cake6-img,
-    .contact-cake5-img,
-    .contacts-bottom-info{
+    .menu-images .card{
         position:static;
         transform:none;
         width:100%;
+        max-width:280px;
     }
 
-    .contact-cake4-img,
-    .contact-cake6-img,
-    .contact-cake5-img{
+    .menu-images img{
+        width:100%;
         height:auto;
+    }
+
+    .menu-images h3{
+        font-size:20px;
     }
 }
